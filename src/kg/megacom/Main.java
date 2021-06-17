@@ -1,5 +1,7 @@
 package kg.megacom;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,26 +10,10 @@ public class Main {
         Developer bruce = new Developer("Bruce", 41, 6800, DevRang.TEAMLEAD);
         Developer barry = new Developer("Barry", 19, 3100, DevRang.JUNIOR);
 
-        printDeveloperGrade(james);
-        printDeveloperGrade(diana);
-        printDeveloperGrade(barry);
-        printDeveloperGrade(bruce);
-    }
+        Developer[] developers = {james, diana, bruce, barry};
 
-    public static void printDeveloperGrade(Developer developer) {
-        switch (developer.getRangs()) {
-            case JUNIOR:
-                System.out.println("I'm junior developer");
-                break;
-            case MIDDLE:
-                System.out.println("I'm middle developer");
-                break;
-            case SENIOR:
-                System.out.println("i'm senior developer");
-                break;
-            case TEAMLEAD:
-                System.out.println("i'm teamlead of the group");
-                break;
+        for (Developer developer : developers) {
+            developer.getRangs().printPhrase();
         }
     }
 }
