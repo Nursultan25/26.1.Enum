@@ -16,4 +16,22 @@ public class Main {
             developer.getRangs().printPhrase();
         }
     }
+
+
+    /*public static void printDeveloperGrade(Developer developer) {
+        switch (developer.getRangs()) {
+            case JUNIOR:
+                System.out.println("I'm junior developer");
+                break;
+            case MIDDLE:
+                System.out.println("I'm middle developer");
+                break;
+            case SENIOR:
+                System.out.println("i'm senior developer");
+                break;
+            case TEAMLEAD:
+                System.out.println("i'm teamlead of the group");
+                break;
+        }
+    }*/
 }
